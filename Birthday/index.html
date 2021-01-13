@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+<head>
+    <title> HOW LONG TILL YOUR BIRTHDAY? </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Vieira">
+    <meta name="description" content="descrição">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div id="principal">
+        <header class="hero">
+
+
+
+            <div class="hero-content">
+                <h1>How long till your birthday?</h1>
+                <h2>Enter the date of your birth</h2>
+                <div id="newsletterForm">
+                <input type="date" id="txtnascimento">
+
+                </div>
+                    <div id="quantoFalta">
+                </div>
+
+            </div>
+        </header>
+
+        <footer class="rodape">
+
+            <p>Copyright &copy; 2021</p>
+
+        </footer>
+    </div>
+
+    <script src="js/birthday.js"></script>
+    <script type="text/javascript">
+        const input = document.getElementById("txtnascimento")
+        input.addEventListener("change", checkBirthday)
+
+        function checkBirthday(e) {
+            const container = document.getElementById("quantoFalta")
+            const arr = e.target.value.split("-")
+            if (arr.length > 2) {
+            
+                container.innerHTML = `
+                    <p>Falta(m) ${quantoFaltaPara(arr[1], arr[2])} dias para o seu aniversario</p>
+                    <p>${quantoFaltaPara(arr[1], arr[2])} days until your birthday</p>
+                `
+            } else {
+                container.textContent = "  "
+            }
+        }
+        
+
+    </script>
+
+</body>
+
+</html>
