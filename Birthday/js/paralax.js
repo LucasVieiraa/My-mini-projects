@@ -19,7 +19,7 @@
             dataParalaxContainer.forEach(c => {
                 let originalPositionY = getComputedStyle(c).backgroundPositionY
                 let originalPositionX = getComputedStyle(c).backgroundPositionX
-                 console.log(originalPositionX, originalPositionY)
+                 //console.log(originalPositionX, originalPositionY)
     
                 if(isGettingOut(c)){
                     c.style.backgroundPosition = `${originalPositionX} ${getNewPosition(c)}px`
