@@ -1,4 +1,4 @@
-;(function(){
+;(function() {
     
     function calculo(){
         const nome = document.getElementById('nome').value
