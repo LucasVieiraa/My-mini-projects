@@ -16,7 +16,7 @@ function quantoFaltaPara(month, day) {
     if(birthdayDate_TS < currentDate_TS){ 
         birthdayDate.setFullYear(++currentYear)
         birthdayDate_TS = +birthdayDate
-    };
+     };
 
     const oneDay = 24 * 60 * 60 * 1000
     const difference = birthdayDate_TS - currentDate_TS
