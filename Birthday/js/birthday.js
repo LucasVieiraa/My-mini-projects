@@ -1,4 +1,4 @@
-function quantoFaltaPara(month, day) {
+function quantoFaltaPara(month, day){
 
     const currentDate = new Date()
     let currentYear = currentDate.getFullYear()
